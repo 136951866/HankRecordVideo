@@ -1,0 +1,25 @@
+//
+//  RecordVideoPrefixHeader.pch
+//  HankRecordVideo
+//
+//  Created by Hank on 2017/2/14.
+//  Copyright © 2017年 Hank. All rights reserved.
+//
+
+#ifndef RecordVideoPrefixHeader_pch
+#define RecordVideoPrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Macros.h"
+#import "ZLPublicTool.h"
+#import "UIView+changeFrame.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD+MJ.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+#endif /* RecordVideoPrefixHeader_pch */

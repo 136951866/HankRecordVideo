@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZLVideoLIstCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uTq-Bb-aGP">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEI-1Z-jCt">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view hidden="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jm-Sj-mlx">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再次点击选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2B-Er-JiZ">
+                        <rect key="frame" x="46" y="79" width="92" height="18"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uTq-Bb-aGP" secondAttribute="bottom" id="3Ae-h1-h1B"/>
+                <constraint firstItem="fEI-1Z-jCt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ASG-js-lCs"/>
+                <constraint firstItem="uTq-Bb-aGP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ivc-Ka-Ctw"/>
+                <constraint firstAttribute="bottom" secondItem="3jm-Sj-mlx" secondAttribute="bottom" id="Jod-A9-szu"/>
+                <constraint firstAttribute="bottom" secondItem="fEI-1Z-jCt" secondAttribute="bottom" id="P9i-XG-4mR"/>
+                <constraint firstAttribute="trailing" secondItem="fEI-1Z-jCt" secondAttribute="trailing" id="RiK-JJ-jxi"/>
+                <constraint firstItem="z2B-Er-JiZ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Uvn-XS-44p"/>
+                <constraint firstItem="uTq-Bb-aGP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vkz-OP-Z7D"/>
+                <constraint firstItem="3jm-Sj-mlx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aW6-AI-KS8"/>
+                <constraint firstItem="fEI-1Z-jCt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fxa-ug-Ovp"/>
+                <constraint firstAttribute="trailing" secondItem="3jm-Sj-mlx" secondAttribute="trailing" id="hlV-be-QB7"/>
+                <constraint firstItem="z2B-Er-JiZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mQw-qP-zaq"/>
+                <constraint firstAttribute="trailing" secondItem="uTq-Bb-aGP" secondAttribute="trailing" id="osz-8H-Kta"/>
+                <constraint firstItem="3jm-Sj-mlx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tp7-DZ-RjR"/>
+            </constraints>
+            <size key="customSize" width="185" height="175"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgPic" destination="uTq-Bb-aGP" id="WsY-zA-wJ8"/>
+                <outlet property="lblSelect" destination="z2B-Er-JiZ" id="3S6-Pm-8Fm"/>
+                <outlet property="viewBack" destination="3jm-Sj-mlx" id="3X3-9n-Z7u"/>
+                <outlet property="viewplayer" destination="fEI-1Z-jCt" id="3jc-lP-NXn"/>
+            </connections>
+            <point key="canvasLocation" x="-305" y="100"/>
+        </collectionViewCell>
+    </objects>
+</document>

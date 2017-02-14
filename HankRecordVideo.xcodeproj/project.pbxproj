@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30368A391E52DE1D00E68396 /* ZLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A381E52DE1D00E68396 /* ZLAlertView.m */; };
+		30368A3C1E52DE3A00E68396 /* ZLFailLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A3B1E52DE3A00E68396 /* ZLFailLoadView.m */; };
+		30368A401E52DE8200E68396 /* UIView+subview.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A3F1E52DE8200E68396 /* UIView+subview.m */; };
+		30368A441E52DF1600E68396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30368A431E52DF1600E68396 /* UIKit.framework */; };
+		30368A461E52DF2E00E68396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30368A451E52DF2E00E68396 /* Foundation.framework */; };
+		30368A491E52DFA700E68396 /* UIView+changeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A481E52DFA700E68396 /* UIView+changeFrame.m */; };
+		30368A4C1E52E00400E68396 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A4B1E52E00400E68396 /* MBProgressHUD+MJ.m */; };
+		30368A501E52E07100E68396 /* ZLPublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A4F1E52E07100E68396 /* ZLPublicTool.m */; };
+		30368A521E52E19E00E68396 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30368A511E52E19E00E68396 /* VideoToolbox.framework */; };
+		30368A551E52E25F00E68396 /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 30368A541E52E25F00E68396 /* UIImage+scale.m */; };
+		3060CE711E4DBC0C004C1B8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CE701E4DBC0C004C1B8D /* main.m */; };
+		3060CE741E4DBC0C004C1B8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CE731E4DBC0C004C1B8D /* AppDelegate.m */; };
+		3060CE7A1E4DBC0C004C1B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3060CE781E4DBC0C004C1B8D /* Main.storyboard */; };
+		3060CE7C1E4DBC0C004C1B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3060CE7B1E4DBC0C004C1B8D /* Assets.xcassets */; };
+		3060CE7F1E4DBC0C004C1B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3060CE7D1E4DBC0C004C1B8D /* LaunchScreen.storyboard */; };
+		3060CE8A1E4DBC0C004C1B8D /* HankRecordVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CE891E4DBC0C004C1B8D /* HankRecordVideoTests.m */; };
+		3060CE951E4DBC0C004C1B8D /* HankRecordVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CE941E4DBC0C004C1B8D /* HankRecordVideoUITests.m */; };
+		3060CEBC1E4DBC33004C1B8D /* ZLRecordVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEA51E4DBC33004C1B8D /* ZLRecordVideoVC.m */; };
+		3060CEBD1E4DBC33004C1B8D /* ZLRecordVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3060CEA61E4DBC33004C1B8D /* ZLRecordVideoVC.xib */; };
+		3060CEBE1E4DBC33004C1B8D /* ZLVideoLIstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEA81E4DBC33004C1B8D /* ZLVideoLIstVC.m */; };
+		3060CEBF1E4DBC33004C1B8D /* ZLRecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEAB1E4DBC33004C1B8D /* ZLRecordEncoder.m */; };
+		3060CEC01E4DBC33004C1B8D /* ZLRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEAD1E4DBC33004C1B8D /* ZLRecordTool.m */; };
+		3060CEC11E4DBC33004C1B8D /* ZLRecordVideoPublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEB01E4DBC33004C1B8D /* ZLRecordVideoPublicTool.m */; };
+		3060CEC21E4DBC33004C1B8D /* ZLVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEB31E4DBC33004C1B8D /* ZLVideoModel.m */; };
+		3060CEC31E4DBC33004C1B8D /* RecordVideo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3060CEB51E4DBC33004C1B8D /* RecordVideo.xcassets */; };
+		3060CEC41E4DBC33004C1B8D /* ZLRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEB81E4DBC33004C1B8D /* ZLRecordProgressView.m */; };
+		3060CEC51E4DBC33004C1B8D /* ZLVideoLIstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060CEBA1E4DBC33004C1B8D /* ZLVideoLIstCell.m */; };
+		3060CEC61E4DBC33004C1B8D /* ZLVideoLIstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3060CEBB1E4DBC33004C1B8D /* ZLVideoLIstCell.xib */; };
+		D9A4EE3E37830B3BEF63CB69 /* libPods-HankRecordVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A72885C4996B97113ECD25 /* libPods-HankRecordVideo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3060CE861E4DBC0C004C1B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3060CE641E4DBC0C004C1B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3060CE6B1E4DBC0C004C1B8D;
+			remoteInfo = HankRecordVideo;
+		};
+		3060CE911E4DBC0C004C1B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3060CE641E4DBC0C004C1B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3060CE6B1E4DBC0C004C1B8D;
+			remoteInfo = HankRecordVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30368A341E52DC2400E68396 /* RecordVideoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordVideoPrefixHeader.pch; sourceTree = "<group>"; };
+		30368A371E52DE1D00E68396 /* ZLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLAlertView.h; sourceTree = "<group>"; };
+		30368A381E52DE1D00E68396 /* ZLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAlertView.m; sourceTree = "<group>"; };
+		30368A3A1E52DE3A00E68396 /* ZLFailLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLFailLoadView.h; sourceTree = "<group>"; };
+		30368A3B1E52DE3A00E68396 /* ZLFailLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLFailLoadView.m; sourceTree = "<group>"; };
+		30368A3E1E52DE8200E68396 /* UIView+subview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+subview.h"; sourceTree = "<group>"; };
+		30368A3F1E52DE8200E68396 /* UIView+subview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+subview.m"; sourceTree = "<group>"; };
+		30368A421E52DEF500E68396 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		30368A431E52DF1600E68396 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30368A451E52DF2E00E68396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30368A471E52DFA700E68396 /* UIView+changeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+changeFrame.h"; sourceTree = "<group>"; };
+		30368A481E52DFA700E68396 /* UIView+changeFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+changeFrame.m"; sourceTree = "<group>"; };
+		30368A4A1E52E00400E68396 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		30368A4B1E52E00400E68396 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		30368A4E1E52E07100E68396 /* ZLPublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPublicTool.h; sourceTree = "<group>"; };
+		30368A4F1E52E07100E68396 /* ZLPublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPublicTool.m; sourceTree = "<group>"; };
+		30368A511E52E19E00E68396 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		30368A531E52E25F00E68396 /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
+		30368A541E52E25F00E68396 /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
+		3060CE6C1E4DBC0C004C1B8D /* HankRecordVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HankRecordVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3060CE701E4DBC0C004C1B8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3060CE721E4DBC0C004C1B8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3060CE731E4DBC0C004C1B8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3060CE791E4DBC0C004C1B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3060CE7B1E4DBC0C004C1B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3060CE7E1E4DBC0C004C1B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3060CE801E4DBC0C004C1B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3060CE851E4DBC0C004C1B8D /* HankRecordVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HankRecordVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3060CE891E4DBC0C004C1B8D /* HankRecordVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankRecordVideoTests.m; sourceTree = "<group>"; };
+		3060CE8B1E4DBC0C004C1B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3060CE901E4DBC0C004C1B8D /* HankRecordVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HankRecordVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3060CE941E4DBC0C004C1B8D /* HankRecordVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankRecordVideoUITests.m; sourceTree = "<group>"; };
+		3060CE961E4DBC0C004C1B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3060CEA41E4DBC33004C1B8D /* ZLRecordVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordVideoVC.h; sourceTree = "<group>"; };
+		3060CEA51E4DBC33004C1B8D /* ZLRecordVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordVideoVC.m; sourceTree = "<group>"; };
+		3060CEA61E4DBC33004C1B8D /* ZLRecordVideoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLRecordVideoVC.xib; sourceTree = "<group>"; };
+		3060CEA71E4DBC33004C1B8D /* ZLVideoLIstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVideoLIstVC.h; sourceTree = "<group>"; };
+		3060CEA81E4DBC33004C1B8D /* ZLVideoLIstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLVideoLIstVC.m; sourceTree = "<group>"; };
+		3060CEAA1E4DBC33004C1B8D /* ZLRecordEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordEncoder.h; sourceTree = "<group>"; };
+		3060CEAB1E4DBC33004C1B8D /* ZLRecordEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordEncoder.m; sourceTree = "<group>"; };
+		3060CEAC1E4DBC33004C1B8D /* ZLRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordTool.h; sourceTree = "<group>"; };
+		3060CEAD1E4DBC33004C1B8D /* ZLRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordTool.m; sourceTree = "<group>"; };
+		3060CEAE1E4DBC33004C1B8D /* ZLRecordVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordVideo.h; sourceTree = "<group>"; };
+		3060CEAF1E4DBC33004C1B8D /* ZLRecordVideoPublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordVideoPublicTool.h; sourceTree = "<group>"; };
+		3060CEB01E4DBC33004C1B8D /* ZLRecordVideoPublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordVideoPublicTool.m; sourceTree = "<group>"; };
+		3060CEB21E4DBC33004C1B8D /* ZLVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVideoModel.h; sourceTree = "<group>"; };
+		3060CEB31E4DBC33004C1B8D /* ZLVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLVideoModel.m; sourceTree = "<group>"; };
+		3060CEB51E4DBC33004C1B8D /* RecordVideo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RecordVideo.xcassets; sourceTree = "<group>"; };
+		3060CEB71E4DBC33004C1B8D /* ZLRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordProgressView.h; sourceTree = "<group>"; };
+		3060CEB81E4DBC33004C1B8D /* ZLRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordProgressView.m; sourceTree = "<group>"; };
+		3060CEB91E4DBC33004C1B8D /* ZLVideoLIstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVideoLIstCell.h; sourceTree = "<group>"; };
+		3060CEBA1E4DBC33004C1B8D /* ZLVideoLIstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLVideoLIstCell.m; sourceTree = "<group>"; };
+		3060CEBB1E4DBC33004C1B8D /* ZLVideoLIstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLVideoLIstCell.xib; sourceTree = "<group>"; };
+		514F3DD2F0AEF872E1C23022 /* libPods-HankRecordVideoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HankRecordVideoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBAADA470BBF8D324AD2791 /* Pods-HankRecordVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HankRecordVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HankRecordVideo/Pods-HankRecordVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		674D1A11327D159E1166A30E /* Pods-HankRecordVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HankRecordVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HankRecordVideo/Pods-HankRecordVideo.release.xcconfig"; sourceTree = "<group>"; };
+		E4A72885C4996B97113ECD25 /* libPods-HankRecordVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HankRecordVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDFBBF348AEE88B0894E14F /* libPods-HankRecordVideoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HankRecordVideoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3060CE691E4DBC0C004C1B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30368A521E52E19E00E68396 /* VideoToolbox.framework in Frameworks */,
+				30368A461E52DF2E00E68396 /* Foundation.framework in Frameworks */,
+				30368A441E52DF1600E68396 /* UIKit.framework in Frameworks */,
+				D9A4EE3E37830B3BEF63CB69 /* libPods-HankRecordVideo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE821E4DBC0C004C1B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE8D1E4DBC0C004C1B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30368A351E52DE0900E68396 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				30368A4D1E52E05800E68396 /* Help */,
+				30368A411E52DED700E68396 /* Macros */,
+				30368A3D1E52DE5300E68396 /* Category */,
+				30368A361E52DE1200E68396 /* View */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		30368A361E52DE1200E68396 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30368A3A1E52DE3A00E68396 /* ZLFailLoadView.h */,
+				30368A3B1E52DE3A00E68396 /* ZLFailLoadView.m */,
+				30368A371E52DE1D00E68396 /* ZLAlertView.h */,
+				30368A381E52DE1D00E68396 /* ZLAlertView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		30368A3D1E52DE5300E68396 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				30368A531E52E25F00E68396 /* UIImage+scale.h */,
+				30368A541E52E25F00E68396 /* UIImage+scale.m */,
+				30368A4A1E52E00400E68396 /* MBProgressHUD+MJ.h */,
+				30368A4B1E52E00400E68396 /* MBProgressHUD+MJ.m */,
+				30368A471E52DFA700E68396 /* UIView+changeFrame.h */,
+				30368A481E52DFA700E68396 /* UIView+changeFrame.m */,
+				30368A3E1E52DE8200E68396 /* UIView+subview.h */,
+				30368A3F1E52DE8200E68396 /* UIView+subview.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		30368A411E52DED700E68396 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				30368A421E52DEF500E68396 /* Macros.h */,
+			);
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		30368A4D1E52E05800E68396 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				30368A4E1E52E07100E68396 /* ZLPublicTool.h */,
+				30368A4F1E52E07100E68396 /* ZLPublicTool.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		3060CE631E4DBC0C004C1B8D = {
+			isa = PBXGroup;
+			children = (
+				3060CE6E1E4DBC0C004C1B8D /* HankRecordVideo */,
+				3060CE881E4DBC0C004C1B8D /* HankRecordVideoTests */,
+				3060CE931E4DBC0C004C1B8D /* HankRecordVideoUITests */,
+				3060CE6D1E4DBC0C004C1B8D /* Products */,
+				D1B23A30006BD544614124CC /* Pods */,
+				6E1DEA19F6C4BC5C875D163B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3060CE6D1E4DBC0C004C1B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE6C1E4DBC0C004C1B8D /* HankRecordVideo.app */,
+				3060CE851E4DBC0C004C1B8D /* HankRecordVideoTests.xctest */,
+				3060CE901E4DBC0C004C1B8D /* HankRecordVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3060CE6E1E4DBC0C004C1B8D /* HankRecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE721E4DBC0C004C1B8D /* AppDelegate.h */,
+				3060CE731E4DBC0C004C1B8D /* AppDelegate.m */,
+				30368A351E52DE0900E68396 /* Public */,
+				3060CEC71E4DBC44004C1B8D /* Other */,
+				3060CEA21E4DBC33004C1B8D /* RecordVideo */,
+				3060CE6F1E4DBC0C004C1B8D /* Supporting Files */,
+			);
+			path = HankRecordVideo;
+			sourceTree = "<group>";
+		};
+		3060CE6F1E4DBC0C004C1B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE701E4DBC0C004C1B8D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3060CE881E4DBC0C004C1B8D /* HankRecordVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE891E4DBC0C004C1B8D /* HankRecordVideoTests.m */,
+				3060CE8B1E4DBC0C004C1B8D /* Info.plist */,
+			);
+			path = HankRecordVideoTests;
+			sourceTree = "<group>";
+		};
+		3060CE931E4DBC0C004C1B8D /* HankRecordVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE941E4DBC0C004C1B8D /* HankRecordVideoUITests.m */,
+				3060CE961E4DBC0C004C1B8D /* Info.plist */,
+			);
+			path = HankRecordVideoUITests;
+			sourceTree = "<group>";
+		};
+		3060CEA21E4DBC33004C1B8D /* RecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEA31E4DBC33004C1B8D /* Controller */,
+				3060CEA91E4DBC33004C1B8D /* Help */,
+				3060CEB11E4DBC33004C1B8D /* Model */,
+				3060CEB41E4DBC33004C1B8D /* Source */,
+				3060CEB61E4DBC33004C1B8D /* View */,
+			);
+			path = RecordVideo;
+			sourceTree = "<group>";
+		};
+		3060CEA31E4DBC33004C1B8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEA41E4DBC33004C1B8D /* ZLRecordVideoVC.h */,
+				3060CEA51E4DBC33004C1B8D /* ZLRecordVideoVC.m */,
+				3060CEA61E4DBC33004C1B8D /* ZLRecordVideoVC.xib */,
+				3060CEA71E4DBC33004C1B8D /* ZLVideoLIstVC.h */,
+				3060CEA81E4DBC33004C1B8D /* ZLVideoLIstVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3060CEA91E4DBC33004C1B8D /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEAA1E4DBC33004C1B8D /* ZLRecordEncoder.h */,
+				3060CEAB1E4DBC33004C1B8D /* ZLRecordEncoder.m */,
+				3060CEAC1E4DBC33004C1B8D /* ZLRecordTool.h */,
+				3060CEAD1E4DBC33004C1B8D /* ZLRecordTool.m */,
+				3060CEAE1E4DBC33004C1B8D /* ZLRecordVideo.h */,
+				3060CEAF1E4DBC33004C1B8D /* ZLRecordVideoPublicTool.h */,
+				3060CEB01E4DBC33004C1B8D /* ZLRecordVideoPublicTool.m */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		3060CEB11E4DBC33004C1B8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEB21E4DBC33004C1B8D /* ZLVideoModel.h */,
+				3060CEB31E4DBC33004C1B8D /* ZLVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3060CEB41E4DBC33004C1B8D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEB51E4DBC33004C1B8D /* RecordVideo.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3060CEB61E4DBC33004C1B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3060CEB71E4DBC33004C1B8D /* ZLRecordProgressView.h */,
+				3060CEB81E4DBC33004C1B8D /* ZLRecordProgressView.m */,
+				3060CEB91E4DBC33004C1B8D /* ZLVideoLIstCell.h */,
+				3060CEBA1E4DBC33004C1B8D /* ZLVideoLIstCell.m */,
+				3060CEBB1E4DBC33004C1B8D /* ZLVideoLIstCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3060CEC71E4DBC44004C1B8D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3060CE781E4DBC0C004C1B8D /* Main.storyboard */,
+				3060CE7B1E4DBC0C004C1B8D /* Assets.xcassets */,
+				3060CE7D1E4DBC0C004C1B8D /* LaunchScreen.storyboard */,
+				3060CE801E4DBC0C004C1B8D /* Info.plist */,
+				30368A341E52DC2400E68396 /* RecordVideoPrefixHeader.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		6E1DEA19F6C4BC5C875D163B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30368A511E52E19E00E68396 /* VideoToolbox.framework */,
+				30368A451E52DF2E00E68396 /* Foundation.framework */,
+				30368A431E52DF1600E68396 /* UIKit.framework */,
+				E4A72885C4996B97113ECD25 /* libPods-HankRecordVideo.a */,
+				514F3DD2F0AEF872E1C23022 /* libPods-HankRecordVideoTests.a */,
+				EBDFBBF348AEE88B0894E14F /* libPods-HankRecordVideoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1B23A30006BD544614124CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EBAADA470BBF8D324AD2791 /* Pods-HankRecordVideo.debug.xcconfig */,
+				674D1A11327D159E1166A30E /* Pods-HankRecordVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3060CE6B1E4DBC0C004C1B8D /* HankRecordVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3060CE991E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideo" */;
+			buildPhases = (
+				CCBF329E9961F5281EEC3130 /* [CP] Check Pods Manifest.lock */,
+				3060CE681E4DBC0C004C1B8D /* Sources */,
+				3060CE691E4DBC0C004C1B8D /* Frameworks */,
+				3060CE6A1E4DBC0C004C1B8D /* Resources */,
+				2004C5D5CFF8FA0A9F31839F /* [CP] Embed Pods Frameworks */,
+				0A239EC0CAC412FCC15D59D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HankRecordVideo;
+			productName = HankRecordVideo;
+			productReference = 3060CE6C1E4DBC0C004C1B8D /* HankRecordVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3060CE841E4DBC0C004C1B8D /* HankRecordVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3060CE9C1E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideoTests" */;
+			buildPhases = (
+				42AC79D43D3FAE3253BC3122 /* [CP] Check Pods Manifest.lock */,
+				3060CE811E4DBC0C004C1B8D /* Sources */,
+				3060CE821E4DBC0C004C1B8D /* Frameworks */,
+				3060CE831E4DBC0C004C1B8D /* Resources */,
+				AD082F9C0F6F40C5C6EBA073 /* [CP] Embed Pods Frameworks */,
+				D4AF10D6ED746099D9C0A80C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3060CE871E4DBC0C004C1B8D /* PBXTargetDependency */,
+			);
+			name = HankRecordVideoTests;
+			productName = HankRecordVideoTests;
+			productReference = 3060CE851E4DBC0C004C1B8D /* HankRecordVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3060CE8F1E4DBC0C004C1B8D /* HankRecordVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3060CE9F1E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideoUITests" */;
+			buildPhases = (
+				6C3BF5BE79A09BB2C6190C01 /* [CP] Check Pods Manifest.lock */,
+				3060CE8C1E4DBC0C004C1B8D /* Sources */,
+				3060CE8D1E4DBC0C004C1B8D /* Frameworks */,
+				3060CE8E1E4DBC0C004C1B8D /* Resources */,
+				2126A4F16924CCA8E7D15D48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3060CE921E4DBC0C004C1B8D /* PBXTargetDependency */,
+			);
+			name = HankRecordVideoUITests;
+			productName = HankRecordVideoUITests;
+			productReference = 3060CE901E4DBC0C004C1B8D /* HankRecordVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3060CE641E4DBC0C004C1B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Hank;
+				TargetAttributes = {
+					3060CE6B1E4DBC0C004C1B8D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					3060CE841E4DBC0C004C1B8D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3060CE6B1E4DBC0C004C1B8D;
+					};
+					3060CE8F1E4DBC0C004C1B8D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3060CE6B1E4DBC0C004C1B8D;
+					};
+				};
+			};
+			buildConfigurationList = 3060CE671E4DBC0C004C1B8D /* Build configuration list for PBXProject "HankRecordVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3060CE631E4DBC0C004C1B8D;
+			productRefGroup = 3060CE6D1E4DBC0C004C1B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3060CE6B1E4DBC0C004C1B8D /* HankRecordVideo */,
+				3060CE841E4DBC0C004C1B8D /* HankRecordVideoTests */,
+				3060CE8F1E4DBC0C004C1B8D /* HankRecordVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3060CE6A1E4DBC0C004C1B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3060CEC31E4DBC33004C1B8D /* RecordVideo.xcassets in Resources */,
+				3060CE7F1E4DBC0C004C1B8D /* LaunchScreen.storyboard in Resources */,
+				3060CEBD1E4DBC33004C1B8D /* ZLRecordVideoVC.xib in Resources */,
+				3060CE7C1E4DBC0C004C1B8D /* Assets.xcassets in Resources */,
+				3060CE7A1E4DBC0C004C1B8D /* Main.storyboard in Resources */,
+				3060CEC61E4DBC33004C1B8D /* ZLVideoLIstCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE831E4DBC0C004C1B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE8E1E4DBC0C004C1B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A239EC0CAC412FCC15D59D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HankRecordVideo/Pods-HankRecordVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2004C5D5CFF8FA0A9F31839F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HankRecordVideo/Pods-HankRecordVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2126A4F16924CCA8E7D15D48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HankRecordVideoUITests/Pods-HankRecordVideoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42AC79D43D3FAE3253BC3122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3BF5BE79A09BB2C6190C01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD082F9C0F6F40C5C6EBA073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HankRecordVideoTests/Pods-HankRecordVideoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBF329E9961F5281EEC3130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4AF10D6ED746099D9C0A80C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HankRecordVideoTests/Pods-HankRecordVideoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3060CE681E4DBC0C004C1B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30368A551E52E25F00E68396 /* UIImage+scale.m in Sources */,
+				3060CEBE1E4DBC33004C1B8D /* ZLVideoLIstVC.m in Sources */,
+				30368A3C1E52DE3A00E68396 /* ZLFailLoadView.m in Sources */,
+				3060CEC01E4DBC33004C1B8D /* ZLRecordTool.m in Sources */,
+				30368A4C1E52E00400E68396 /* MBProgressHUD+MJ.m in Sources */,
+				3060CEBC1E4DBC33004C1B8D /* ZLRecordVideoVC.m in Sources */,
+				3060CEC41E4DBC33004C1B8D /* ZLRecordProgressView.m in Sources */,
+				30368A391E52DE1D00E68396 /* ZLAlertView.m in Sources */,
+				3060CE741E4DBC0C004C1B8D /* AppDelegate.m in Sources */,
+				30368A401E52DE8200E68396 /* UIView+subview.m in Sources */,
+				30368A501E52E07100E68396 /* ZLPublicTool.m in Sources */,
+				3060CEC11E4DBC33004C1B8D /* ZLRecordVideoPublicTool.m in Sources */,
+				30368A491E52DFA700E68396 /* UIView+changeFrame.m in Sources */,
+				3060CEC21E4DBC33004C1B8D /* ZLVideoModel.m in Sources */,
+				3060CEC51E4DBC33004C1B8D /* ZLVideoLIstCell.m in Sources */,
+				3060CE711E4DBC0C004C1B8D /* main.m in Sources */,
+				3060CEBF1E4DBC33004C1B8D /* ZLRecordEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE811E4DBC0C004C1B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3060CE8A1E4DBC0C004C1B8D /* HankRecordVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3060CE8C1E4DBC0C004C1B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3060CE951E4DBC0C004C1B8D /* HankRecordVideoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3060CE871E4DBC0C004C1B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3060CE6B1E4DBC0C004C1B8D /* HankRecordVideo */;
+			targetProxy = 3060CE861E4DBC0C004C1B8D /* PBXContainerItemProxy */;
+		};
+		3060CE921E4DBC0C004C1B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3060CE6B1E4DBC0C004C1B8D /* HankRecordVideo */;
+			targetProxy = 3060CE911E4DBC0C004C1B8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3060CE781E4DBC0C004C1B8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3060CE791E4DBC0C004C1B8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3060CE7D1E4DBC0C004C1B8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3060CE7E1E4DBC0C004C1B8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3060CE971E4DBC0C004C1B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3060CE981E4DBC0C004C1B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3060CE9A1E4DBC0C004C1B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBAADA470BBF8D324AD2791 /* Pods-HankRecordVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = ./HankRecordVideo/RecordVideoPrefixHeader.pch;
+				INFOPLIST_FILE = HankRecordVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"QuartzCore\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.cn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3060CE9B1E4DBC0C004C1B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674D1A11327D159E1166A30E /* Pods-HankRecordVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = ./HankRecordVideo/RecordVideoPrefixHeader.pch;
+				INFOPLIST_FILE = HankRecordVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"QuartzCore\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.cn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3060CE9D1E4DBC0C004C1B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HankRecordVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hank.HankRecordVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HankRecordVideo.app/HankRecordVideo";
+			};
+			name = Debug;
+		};
+		3060CE9E1E4DBC0C004C1B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HankRecordVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hank.HankRecordVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HankRecordVideo.app/HankRecordVideo";
+			};
+			name = Release;
+		};
+		3060CEA01E4DBC0C004C1B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HankRecordVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hank.HankRecordVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HankRecordVideo;
+			};
+			name = Debug;
+		};
+		3060CEA11E4DBC0C004C1B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HankRecordVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hank.HankRecordVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HankRecordVideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3060CE671E4DBC0C004C1B8D /* Build configuration list for PBXProject "HankRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3060CE971E4DBC0C004C1B8D /* Debug */,
+				3060CE981E4DBC0C004C1B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3060CE991E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3060CE9A1E4DBC0C004C1B8D /* Debug */,
+				3060CE9B1E4DBC0C004C1B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3060CE9C1E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3060CE9D1E4DBC0C004C1B8D /* Debug */,
+				3060CE9E1E4DBC0C004C1B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3060CE9F1E4DBC0C004C1B8D /* Build configuration list for PBXNativeTarget "HankRecordVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3060CEA01E4DBC0C004C1B8D /* Debug */,
+				3060CEA11E4DBC0C004C1B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3060CE641E4DBC0C004C1B8D /* Project object */;
+}

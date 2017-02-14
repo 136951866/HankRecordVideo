@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLRecordVideoVC">
+            <connections>
+                <outlet property="btnChangeCamera" destination="5xE-gG-S2B" id="2fL-qL-3BZ"/>
+                <outlet property="btnRecord" destination="Zh8-y0-QzK" id="Mzm-si-6UA"/>
+                <outlet property="btnRecordNext" destination="5yO-fN-05N" id="9iF-uR-bfG"/>
+                <outlet property="btnflashLight" destination="eME-6M-Mnv" id="1Mz-Pa-FDC"/>
+                <outlet property="consTopViewTop" destination="fDC-y2-JvO" id="5Vx-lp-wsL"/>
+                <outlet property="progressView" destination="4Jf-JV-StI" id="T1F-ev-HpO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yO-fN-05N">
+                    <rect key="frame" x="301" y="20" width="52" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="recordNextAction:" destination="-1" eventType="touchUpInside" id="SIl-Nh-uEk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xE-gG-S2B">
+                    <rect key="frame" x="118" y="20" width="52" height="44"/>
+                    <state key="normal" image="changeCamera"/>
+                    <connections>
+                        <action selector="changeCameraAction:" destination="-1" eventType="touchUpInside" id="5At-iO-ZCp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eME-6M-Mnv">
+                    <rect key="frame" x="206" y="20" width="52" height="44"/>
+                    <state key="normal" image="flashlightOff"/>
+                    <state key="selected" image="flashlightOn"/>
+                    <connections>
+                        <action selector="flashLightAction:" destination="-1" eventType="touchUpInside" id="T0Q-Xa-JNB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jf-JV-StI" customClass="ZLRecordProgressView">
+                    <rect key="frame" x="0.0" y="521" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="97O-Bo-7MS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="progressBgColor">
+                            <color key="value" red="0.72799396510000003" green="0.72797214980000002" blue="0.72798454759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                            <color key="value" red="0.972296834" green="0.1877550781" blue="0.17929968239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGW-Lm-myi">
+                    <rect key="frame" x="22" y="20" width="52" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="27u-NG-lHZ"/>
+                        <constraint firstAttribute="width" constant="52" id="aQE-oP-D3h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="FoL-Lr-cVe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-y0-QzK">
+                    <rect key="frame" x="148" y="559" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="jjP-XY-XEF"/>
+                        <constraint firstAttribute="height" constant="80" id="yUx-5V-yCk"/>
+                    </constraints>
+                    <state key="normal" image="videoRecord"/>
+                    <state key="selected" image="videoPause"/>
+                    <connections>
+                        <action selector="recordAction:" destination="-1" eventType="touchUpInside" id="SvJ-Mg-okr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5xE-gG-S2B" firstAttribute="width" secondItem="zGW-Lm-myi" secondAttribute="width" id="74U-SV-4a2"/>
+                <constraint firstItem="Zh8-y0-QzK" firstAttribute="top" secondItem="4Jf-JV-StI" secondAttribute="bottom" constant="33" id="8fT-xH-hAa"/>
+                <constraint firstItem="eME-6M-Mnv" firstAttribute="width" secondItem="zGW-Lm-myi" secondAttribute="width" id="BMi-k0-V7Q"/>
+                <constraint firstItem="zGW-Lm-myi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="Fz3-8L-wdU"/>
+                <constraint firstItem="5xE-gG-S2B" firstAttribute="top" secondItem="zGW-Lm-myi" secondAttribute="top" id="Isu-3N-wjM"/>
+                <constraint firstItem="5xE-gG-S2B" firstAttribute="bottom" secondItem="zGW-Lm-myi" secondAttribute="bottom" id="N1A-Vh-1de"/>
+                <constraint firstItem="Zh8-y0-QzK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RHs-oZ-9xx"/>
+                <constraint firstItem="5xE-gG-S2B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-44" id="RYc-XO-P4l"/>
+                <constraint firstItem="eME-6M-Mnv" firstAttribute="bottom" secondItem="zGW-Lm-myi" secondAttribute="bottom" id="TPu-rb-ZDC"/>
+                <constraint firstItem="eME-6M-Mnv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="44" id="Xbn-Md-3lF"/>
+                <constraint firstItem="5yO-fN-05N" firstAttribute="height" secondItem="zGW-Lm-myi" secondAttribute="height" id="YhN-gF-xYz"/>
+                <constraint firstItem="5xE-gG-S2B" firstAttribute="height" secondItem="zGW-Lm-myi" secondAttribute="height" id="a0L-Al-yLN"/>
+                <constraint firstItem="4Jf-JV-StI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aVY-Xd-3mm"/>
+                <constraint firstAttribute="trailing" secondItem="4Jf-JV-StI" secondAttribute="trailing" id="dCK-IT-EOn"/>
+                <constraint firstItem="eME-6M-Mnv" firstAttribute="top" secondItem="zGW-Lm-myi" secondAttribute="top" id="egs-uA-OjG"/>
+                <constraint firstItem="zGW-Lm-myi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="fDC-y2-JvO"/>
+                <constraint firstAttribute="bottom" secondItem="Zh8-y0-QzK" secondAttribute="bottom" constant="28" id="iqz-jo-wNj"/>
+                <constraint firstAttribute="trailing" secondItem="5yO-fN-05N" secondAttribute="trailing" constant="22" id="nHx-j3-3gD"/>
+                <constraint firstItem="4Jf-JV-StI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uxp-Ev-uMX"/>
+                <constraint firstItem="eME-6M-Mnv" firstAttribute="height" secondItem="zGW-Lm-myi" secondAttribute="height" id="vFn-86-ipC"/>
+                <constraint firstItem="5yO-fN-05N" firstAttribute="top" secondItem="zGW-Lm-myi" secondAttribute="top" id="xfg-0s-Ble"/>
+                <constraint firstItem="5yO-fN-05N" firstAttribute="width" secondItem="zGW-Lm-myi" secondAttribute="width" id="yJb-21-xgH"/>
+            </constraints>
+            <point key="canvasLocation" x="-414" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="changeCamera" width="49" height="34"/>
+        <image name="flashlightOff" width="49" height="34"/>
+        <image name="flashlightOn" width="49" height="34"/>
+        <image name="videoPause" width="80" height="80"/>
+        <image name="videoRecord" width="80" height="80"/>
+    </resources>
+</document>
