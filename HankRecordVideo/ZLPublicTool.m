@@ -1,9 +1,9 @@
 //
 //  ZLPublicTool.m
-//  我要留学
+//  HankRecordVideo
 //
 //  Created by Hank on 9/28/16.
-//  Copyright © 2016 深圳市智联天下国际教育有限公司. All rights reserved.
+//  Copyright © 2016 Hank. All rights reserved.
 //
 
 #import "ZLPublicTool.h"

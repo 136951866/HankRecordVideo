@@ -1,9 +1,9 @@
 //
 //  ZLRecordTool.m
-//  我要留学
+//  HankRecordVideo
 //
 //  Created by Hank on 2016/12/16.
-//  Copyright © 2016年 深圳市智联天下国际教育有限公司. All rights reserved.
+//  Copyright © 2016 Hank. All rights reserved.
 //
 
 #import "ZLRecordTool.h"
@@ -11,6 +11,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
 #import "ZLRecordVideoPublicTool.h"
+
+#import <GPUImage/GPUImage.h>
 
 @interface ZLRecordTool ()<AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate, CAAnimationDelegate> {
     CMTime _timeOffset;
@@ -45,6 +47,7 @@
 @implementation ZLRecordTool
 
 - (void)dealloc {
+    GPUImageVideoCamera
     [_recordSession stopRunning];
     _captureQueue     = nil;
     _recordSession    = nil;

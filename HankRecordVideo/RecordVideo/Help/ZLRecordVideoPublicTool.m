@@ -1,9 +1,9 @@
 //
 //  ZLRecordVideoPublicTool.m
-//  我要留学
+//  HankRecordVideo
 //
 //  Created by Hank on 2016/12/16.
-//  Copyright © 2016年 深圳市智联天下国际教育有限公司. All rights reserved.
+//  Copyright © 2016 Hank. All rights reserved.
 //
 
 #import "ZLRecordVideoPublicTool.h"

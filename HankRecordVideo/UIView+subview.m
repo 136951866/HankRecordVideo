@@ -1,6 +1,6 @@
 //
 //  UIView+subview.m
-//  我要留学
+//  HankRecordVideo
 //
 //  Created by 深圳市智联天下国际教育有限公司 on 16/9/27.
 //  Copyright © 2016年 深圳市智联天下国际教育有限公司. All rights reserved.

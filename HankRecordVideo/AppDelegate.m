@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZLVideoLIstVC.h"
+#import "ZLVideoModel.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ZLVideoLIstVC *homePageVC = [[ZLVideoLIstVC alloc] init];
+    homePageVC.dataBlock = ^(ZLVideoModel *videomodel) {
+        
+    };
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homePageVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
