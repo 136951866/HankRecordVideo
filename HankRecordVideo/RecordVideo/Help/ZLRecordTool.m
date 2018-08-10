@@ -47,7 +47,7 @@
 @implementation ZLRecordTool
 
 - (void)dealloc {
-    GPUImageVideoCamera
+    //GPUImageVideoCamera
     [_recordSession stopRunning];
     _captureQueue     = nil;
     _recordSession    = nil;
